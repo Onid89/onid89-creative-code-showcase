@@ -38,7 +38,7 @@ export default function Hero() {
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-56 h-56 xs:w-64 xs:h-64 md:w-80 md:h-80 rounded-full overflow-hidden italian-border p-1">
               <img
-                src="/lovable-uploads/85f6dac0-8551-475e-8d8e-567afb286fb3.png"
+                src="/profile/profile-round.png"
                 alt="Gerardo Michele Mussuto"
                 className="object-cover w-full h-full rounded-full"
               />

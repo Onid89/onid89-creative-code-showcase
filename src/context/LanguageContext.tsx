@@ -46,9 +46,9 @@ const translations: Translations = {
     it: 'Gerardo Michele Mussuto'
   },
   'hero.subtitle': {
-    en: 'Fullstack Web Developer',
-    de: 'Fullstack Webentwickler',
-    it: 'Sviluppatore Web Fullstack'
+    en: 'Junior Fullstack Web Developer',
+    de: 'Junior Fullstack Webentwickler',
+    it: 'Junior Sviluppatore Web Fullstack'
   },
   'hero.description': {
     en: "I'm an artist turned Web Developer with a solid background as a professional opera dancer. My artistic career has equipped me with a strong sense of creativity, discipline, and attention to detail, qualities that I now passionately apply to the world of technology and software development.",

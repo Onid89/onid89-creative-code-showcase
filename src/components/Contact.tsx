@@ -120,10 +120,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:gmomussuto89@gmail.com"
+                    href="mailto:dinomussuto89@gmail.com"
                     className="text-muted-foreground hover:text-accent transition-colors"
                   >
-                    gmomussuto89@gmail.com
+                    dinomussuto89@gmail.com
                   </a>
                 </div>
               </div>
@@ -148,12 +148,12 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium">LinkedIn</h4>
                   <a
-                    href="https://linkedin.com/in/gerardo-michele-mussuto-89397131"
+                    href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-colors"
                   >
-                    linkedin.com/in/gerardo-michele-mussuto-89397131
+                    linkedin.com/in/gerardo-michele-mussuto
                   </a>
                 </div>
               </div>

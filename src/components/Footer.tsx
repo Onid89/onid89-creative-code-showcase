@@ -21,7 +21,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a 
-              href="https://linkedin.com/in/gerardo-michele-mussuto-89397131" 
+              href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313/"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-white transition-colors"
@@ -30,7 +30,7 @@ export default function Footer() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a 
-              href="mailto:gmomussuto89@gmail.com"
+              href="mailto:dinomussuto89@gmail.com"
               className="text-muted-foreground hover:text-accent transition-colors"
             >
               <Mail className="h-6 w-6" />
@@ -40,7 +40,7 @@ export default function Footer() {
           
           <div className="w-full max-w-md mb-6 flex items-center">
             <div className="h-0.5 bg-[#008C45] flex-1"></div>
-            <div className="h-0.5 bg-white dark:bg-white/30 flex-1"></div>
+            <div className="h-0.5 bg-white dark:bg-white/100 flex-1"></div>
             <div className="h-0.5 bg-[#CD212A] flex-1"></div>
           </div>
           
