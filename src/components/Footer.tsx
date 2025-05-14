@@ -15,7 +15,7 @@ export default function Footer() {
               href="https://github.com/Onid89" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
@@ -24,7 +24,7 @@ export default function Footer() {
               href="https://linkedin.com/in/gerardo-michele-mussuto-89397131" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-white transition-colors"
             >
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
@@ -38,7 +38,11 @@ export default function Footer() {
             </a>
           </div>
           
-          <Separator className="w-full max-w-md mb-6" />
+          <div className="w-full max-w-md mb-6 flex items-center">
+            <div className="h-0.5 bg-[#008C45] flex-1"></div>
+            <div className="h-0.5 bg-white dark:bg-white/30 flex-1"></div>
+            <div className="h-0.5 bg-[#CD212A] flex-1"></div>
+          </div>
           
           <div className="text-center">
             <p className="text-sm text-muted-foreground">

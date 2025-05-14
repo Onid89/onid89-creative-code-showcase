@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -41,8 +43,8 @@ export default function Navbar() {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden md:flex md:items-center md:space-x-4">
+            <div className="flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <a
                   key={item.label}
@@ -53,15 +55,22 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
+            
+            <div className="flex items-center space-x-1 ml-4">
+              <ThemeToggle />
+              <LanguageSwitcher />
+            </div>
           </div>
           
           {/* Mobile Navigation Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <LanguageSwitcher />
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground"
+              className="text-foreground ml-2"
             >
               {isMenuOpen ? <X /> : <Menu />}
             </Button>

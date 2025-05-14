@@ -34,14 +34,14 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className="glass border border-accent/20 rounded-lg p-6 hover:border-accent/40 transition-all"
+              className="glass border border-accent/20 rounded-lg p-6 hover:italian-border transition-all"
             >
               <h3 className="text-xl font-semibold mb-4 text-accent">{category.name}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, i) => (
                   <Badge 
                     key={i}
-                    className="bg-accent/10 hover:bg-accent/20 text-accent border-accent/30 px-3 py-1"
+                    className="bg-primary/10 hover:bg-primary/20 text-primary border-primary/30 px-3 py-1"
                   >
                     {skill}
                   </Badge>
@@ -51,11 +51,11 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="mt-12 glass border border-accent/20 rounded-lg p-6">
+        <div className="mt-12 glass border border-accent/20 rounded-lg p-6 hover:italian-border transition-all">
           <h3 className="text-xl font-semibold mb-4 text-center text-accent">Transferable Skills from Artistic Career</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             <div className="flex flex-col items-center text-center">
-              <div className="text-accent text-xl font-bold mb-2">Creativity</div>
+              <div className="text-primary text-xl font-bold mb-2">Creativity</div>
               <p className="text-muted-foreground">
                 Bringing innovative solutions to technical problems through creative thinking.
               </p>
@@ -67,13 +67,13 @@ export default function Skills() {
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <div className="text-accent text-xl font-bold mb-2">Attention to Detail</div>
+              <div className="text-white text-xl font-bold mb-2">Attention to Detail</div>
               <p className="text-muted-foreground">
                 Ensuring precision in code and design implementation.
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <div className="text-accent text-xl font-bold mb-2">Teamwork</div>
+              <div className="text-primary text-xl font-bold mb-2">Teamwork</div>
               <p className="text-muted-foreground">
                 Collaborating effectively with diverse teams to achieve common goals.
               </p>
@@ -85,7 +85,7 @@ export default function Skills() {
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <div className="text-accent text-xl font-bold mb-2">Time Management</div>
+              <div className="text-white text-xl font-bold mb-2">Time Management</div>
               <p className="text-muted-foreground">
                 Meeting deadlines and managing multiple tasks efficiently.
               </p>

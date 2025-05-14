@@ -5,6 +5,47 @@
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    
+    --primary: 142 76% 36%; /* Green inspired by Italian flag */
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    
+    --accent: 0 75% 42%; /* Red inspired by Italian flag */
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 142 76% 36%;
+  }
+
+  .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     
@@ -14,8 +55,8 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
     
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 142 76% 36%; /* Green inspired by Italian flag */
+    --primary-foreground: 0 0% 98%;
     
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -23,7 +64,7 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     
-    --accent: 217 91% 60%;
+    --accent: 0 75% 42%; /* Red inspired by Italian flag */
     --accent-foreground: 0 0% 98%;
     
     --destructive: 0 62.8% 30.6%;
@@ -31,9 +72,7 @@
     
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 217 91% 60%;
-
-    --radius: 0.5rem;
+    --ring: 142 76% 36%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -42,7 +81,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 142 76% 36%;
   }
 }
 
@@ -67,7 +106,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent dark:from-white dark:via-white/90 dark:to-white/70;
   }
   
   .text-accent-gradient {
@@ -76,5 +115,9 @@
   
   .section-padding {
     @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+
+  .italian-border {
+    @apply border-l-[3px] border-l-[#008C45] border-r-[3px] border-r-[#CD212A] border-y-white/30 dark:border-y-white/10;
   }
 }

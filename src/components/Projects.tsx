@@ -58,7 +58,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="glass overflow-hidden border-accent/20 hover:border-accent/40 transition-all group"
+              className="glass overflow-hidden border-accent/20 hover:italian-border transition-all group"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -80,8 +80,8 @@ export default function Projects() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex gap-4">
-                <Button asChild variant="outline" size="sm" className="border-accent text-accent hover:bg-accent/10">
+              <CardFooter className="flex flex-wrap gap-4">
+                <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     GitHub

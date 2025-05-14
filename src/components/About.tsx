@@ -29,12 +29,12 @@ export default function About() {
           </div>
 
           <div className="space-y-6">
-            <Card className="glass border-accent/20">
+            <Card className="glass border-accent/20 hover:italian-border transition-all duration-300">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-accent">Education</h3>
                 <ul className="space-y-4">
                   <li>
-                    <div className="flex justify-between items-baseline">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                       <h4 className="font-medium">Full Stack Web Development</h4>
                       <span className="text-xs text-muted-foreground">07/2022 - 04/2023</span>
                     </div>
@@ -44,7 +44,7 @@ export default function About() {
                     </p>
                   </li>
                   <li>
-                    <div className="flex justify-between items-baseline">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                       <h4 className="font-medium">High School Diploma in Accounting and Programming</h4>
                       <span className="text-xs text-muted-foreground">09/2003 - 07/2008</span>
                     </div>
@@ -54,17 +54,17 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="glass border-accent/20">
+            <Card className="glass border-accent/20 hover:italian-border transition-all duration-300">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-accent">Languages</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <p className="font-medium">Italian</p>
                     <div className="flex mt-1">
                       {[1, 2, 3, 4, 5].map((i) => (
                         <div
                           key={i}
-                          className={`w-5 h-5 rounded-full ${
+                          className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${
                             i <= 5 ? "bg-accent" : "bg-muted"
                           } mr-1`}
                         ></div>
@@ -77,7 +77,7 @@ export default function About() {
                       {[1, 2, 3, 4, 5].map((i) => (
                         <div
                           key={i}
-                          className={`w-5 h-5 rounded-full ${
+                          className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${
                             i <= 4 ? "bg-accent" : "bg-muted"
                           } mr-1`}
                         ></div>
@@ -90,7 +90,7 @@ export default function About() {
                       {[1, 2, 3, 4, 5].map((i) => (
                         <div
                           key={i}
-                          className={`w-5 h-5 rounded-full ${
+                          className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${
                             i <= 3 ? "bg-accent" : "bg-muted"
                           } mr-1`}
                         ></div>
