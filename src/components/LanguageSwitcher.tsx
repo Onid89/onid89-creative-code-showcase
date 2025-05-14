@@ -8,9 +8,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useLanguage } from "@/context/LanguageContext";
 
 type Language = {
-  code: string;
+  code: "en" | "de" | "it";
   name: string;
   flag: string;
 };
@@ -22,11 +23,10 @@ const languages: Language[] = [
 ];
 
 export function LanguageSwitcher() {
-  const [currentLang, setCurrentLang] = useState<string>("en");
+  const { language, setLanguage } = useLanguage();
 
-  const handleLanguageChange = (langCode: string) => {
-    setCurrentLang(langCode);
-    // Here you would implement the actual language change logic
+  const handleLanguageChange = (langCode: "en" | "de" | "it") => {
+    setLanguage(langCode);
     console.log(`Language changed to ${langCode}`);
   };
 
@@ -43,7 +43,7 @@ export function LanguageSwitcher() {
           <DropdownMenuItem
             key={lang.code}
             onClick={() => handleLanguageChange(lang.code)}
-            className={currentLang === lang.code ? "bg-accent/20" : ""}
+            className={language === lang.code ? "bg-accent/20" : ""}
           >
             <span className="mr-2">{lang.flag}</span>
             {lang.name}

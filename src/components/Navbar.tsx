@@ -5,18 +5,20 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-
-const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" }
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
+  
+  const navItems = [
+    { label: t('nav.home'), href: "#home" },
+    { label: t('nav.about'), href: "#about" },
+    { label: t('nav.projects'), href: "#projects" },
+    { label: t('nav.skills'), href: "#skills" },
+    { label: t('nav.contact'), href: "#contact" }
+  ];
   
   useEffect(() => {
     const handleScroll = () => {
