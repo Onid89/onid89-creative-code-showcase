@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -15,6 +16,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -51,20 +53,20 @@ export default function Contact() {
     <section id="contact" className="section-padding">
       <div className="container mx-auto">
         <div className="flex flex-col items-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">Get In Touch</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">{t('contact.title')}</h2>
           <Separator className="w-20 bg-accent h-1 rounded-full" />
           <p className="text-muted-foreground mt-4 text-center max-w-2xl">
-            Interested in working together or have questions? Feel free to reach out.
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="glass border border-accent/20 rounded-lg p-8">
-            <h3 className="text-xl font-semibold mb-6 text-accent">Send Me a Message</h3>
+            <h3 className="text-xl font-semibold mb-6 text-accent">{t('contact.form.title')}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Name
+                  {t('contact.form.name')}
                 </label>
                 <Input
                   id="name"
@@ -77,7 +79,7 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email
+                  {t('contact.form.email')}
                 </label>
                 <Input
                   id="email"
@@ -91,7 +93,7 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message
+                  {t('contact.form.message')}
                 </label>
                 <Textarea
                   id="message"
@@ -107,18 +109,18 @@ export default function Contact() {
                 className="w-full bg-accent hover:bg-accent/80 text-white"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
               </Button>
             </form>
           </div>
 
           <div className="flex flex-col justify-center">
-            <h3 className="text-xl font-semibold mb-6 text-accent">Contact Information</h3>
+            <h3 className="text-xl font-semibold mb-6 text-accent">{t('contact.info.title')}</h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <Mail className="h-6 w-6 text-accent mt-1" />
                 <div>
-                  <h4 className="font-medium">Email</h4>
+                  <h4 className="font-medium">{t('contact.info.email')}</h4>
                   <a
                     href="mailto:dinomussuto89@gmail.com"
                     className="text-muted-foreground hover:text-accent transition-colors"
@@ -131,7 +133,7 @@ export default function Contact() {
               <div className="flex items-start space-x-4">
                 <Github className="h-6 w-6 text-accent mt-1" />
                 <div>
-                  <h4 className="font-medium">GitHub</h4>
+                  <h4 className="font-medium">{t('contact.info.github')}</h4>
                   <a
                     href="https://github.com/Onid89"
                     target="_blank"
@@ -146,7 +148,7 @@ export default function Contact() {
               <div className="flex items-start space-x-4">
                 <Linkedin className="h-6 w-6 text-accent mt-1" />
                 <div>
-                  <h4 className="font-medium">LinkedIn</h4>
+                  <h4 className="font-medium">{t('contact.info.linkedin')}</h4>
                   <a
                     href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313/"
                     target="_blank"
@@ -160,10 +162,9 @@ export default function Contact() {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-4 text-accent">Location</h3>
-              <p className="text-muted-foreground">
-                Based in Berlin, Germany<br />
-                Available for remote work and local opportunities
+              <h3 className="text-xl font-semibold mb-4 text-accent">{t('contact.location.title')}</h3>
+              <p className="text-muted-foreground whitespace-pre-line">
+                {t('contact.location.desc')}
               </p>
             </div>
           </div>

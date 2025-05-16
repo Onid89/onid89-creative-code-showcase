@@ -2,9 +2,11 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-secondary/30 py-12">
@@ -46,10 +48,10 @@ export default function Footer() {
           
           <div className="text-center">
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} Gerardo Michele Mussuto. All rights reserved.
+              &copy; {currentYear} Gerardo Michele Mussuto. {t('footer.rights')}
             </p>
             <p className="text-xs text-muted-foreground mt-2">
-              Fullstack Web Developer based in Berlin, Germany
+              {t('footer.description')}
             </p>
           </div>
         </div>
