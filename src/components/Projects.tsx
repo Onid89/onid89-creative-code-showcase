@@ -14,32 +14,32 @@ const projects = [
     descriptionKey: "projects.project1.desc",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3",
     tags: ["HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/Onid89",
+    github: "https://github.com/Onid89/Web-Dev-Portfolio",
     demo: "https://onid89.github.io/Web-Dev-Portfolio/"
   },
   {
     titleKey: "projects.project2.title",
     descriptionKey: "projects.project2.desc",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3",
-    tags: ["UI/UX", "Design", "Figma"],
-    github: "https://github.com/Onid89",
-    demo: ""
+    image: "/images/Weather-App.webp",
+    tags: ["HTML5", "CSS3", "JavaScript","API"],
+    github: "https://github.com/Onid89/Weather-App",
+    demo: "https://onid89.github.io/Weather-App/"
   },
   {
     titleKey: "projects.project3.title",
     descriptionKey: "projects.project3.desc",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3",
-    tags: ["Unity", "C#", "Game Development"],
-    github: "https://github.com/Onid89",
-    demo: ""
+    image: "images/Trivia-game.webp",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/Onid89/Trivia-Game",
+    demo: "https://onid89.github.io/Trivia-Game/"
   },
   {
     titleKey: "projects.project4.title",
     descriptionKey: "projects.project4.desc",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3",
-    tags: ["React", "JavaScript", "CSS"],
-    github: "https://github.com/Onid89",
-    demo: ""
+    image: "images/code-square-img.png",
+    tags: ["React", "TypeScript", "SCSS", "Vite", "Node.js", "Express.js", "WebSocket", "MongoDB"],
+    github: "https://github.com/Onid89/realtime-chat",
+    demo: "https://csc-frontend-2gdx.onrender.com/"
   }
 ];
 

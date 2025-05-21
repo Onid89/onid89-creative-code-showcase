@@ -77,15 +77,20 @@ const translations: Translations = {
     it: 'Transizione di Carriera'
   },
   'about.career.p1': {
-    en: 'After a very successful career as an opera dancer, I decided to change my path when I learned about programming during my career. As I got more invested in technology and coding, I realized Silicon Valley had more to offer than Swan Lake. So I see greater long-term prospects in the technology industry, I made a conscious decision in favor of web development.',
-    de: 'Nach einer sehr erfolgreichen Karriere als Operntänzer beschloss ich, meinen Weg zu ändern, als ich während meiner Karriere vom Programmieren erfuhr. Als ich mich mehr mit Technologie und Coding beschäftigte, erkannte ich, dass das Silicon Valley mehr zu bieten hatte als Schwanensee. Da ich in der Technologiebranche größere langfristige Perspektiven sehe, traf ich eine bewusste Entscheidung für die Webentwicklung.',
-    it: 'Dopo una carriera di grande successo come ballerino d\'opera, ho deciso di cambiare strada quando ho conosciuto la programmazione durante la mia carriera. Mentre mi interessavo sempre più alla tecnologia e alla programmazione, ho capito che la Silicon Valley aveva più da offrire del Lago dei Cigni. Vedendo maggiori prospettive a lungo termine nel settore tecnologico, ho preso una decisione consapevole a favore dello sviluppo web.'
+    en: 'After an international career in the world of dance, with experiences at renowned theaters such as Deutsche Oper Berlin, Theater Chemnitz, and Semperoper Dresden, I decided to take on a new professional challenge in the field of web development. Driven by curiosity, a passion for technology, and the desire to build concrete digital solutions, I completed the Full Stack Web Development program at DCI Career Institute in Berlin in February 2025.',
+    de: 'Nach einer internationalen Karriere in der Welt des Tanzes, mit Erfahrungen an renommierten Theatern wie der Deutschen Oper Berlin, dem Theater Chemnitz und der Semperoper Dresden, habe ich mich dazu entschieden, eine neue berufliche Herausforderung im Bereich der Webentwicklung anzunehmen. Getrieben von Neugier, einer Leidenschaft für Technologie und dem Wunsch, konkrete digitale Lösungen zu entwickeln, habe ich im Februar 2025 das Full Stack Web Development Programm am DCI Career Institute in Berlin abgeschlossen.',
+    it: 'Dopo una carriera internazionale nel mondo della danza, con esperienze in teatri rinomati come la Deutsche Oper Berlin, il Theater Chemnitz e la Semperoper Dresden, ho deciso di affrontare una nuova sfida professionale nel campo dello sviluppo web. Spinto dalla curiosità, dalla passione per la tecnologia e dal desiderio di creare soluzioni digitali concrete, ho completato il programma di Full Stack Web Development presso il DCI Career Institute di Berlino nel febbraio 2025.'
   },
   'about.career.p2': {
-    en: 'To specially prepare for my career change, I took online courses on Udemy and Coursera and completed an official one-month intensive web development course, which concluded with the Digital Career Institute, which concluded with a small final project.',
-    de: 'Um mich speziell auf meinen Berufswechsel vorzubereiten, absolvierte ich Online-Kurse auf Udemy und Coursera und schloss einen offiziellen einmonatigen intensiven Webentwicklungskurs ab, der mit dem Digital Career Institute endete und mit einem kleinen Abschlussprojekt abschloss.',
-    it: 'Per prepararmi specificamente al cambio di carriera, ho seguito corsi online su Udemy e Coursera e ho completato un corso intensivo ufficiale di sviluppo web di un mese, che si è concluso con il Digital Career Institute, culminando in un piccolo progetto finale.'
+    en: 'Throughout my training, I gained hands-on experience with HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB, and collaborated on real-world projects that strengthened both my technical and communication skills. Following the course, I completed a two-month internship at Drengr Tech IT Solution, where I applied my knowledge in a professional setting and contributed to the frontend development of web applications.',
+    de: 'Während meiner Ausbildung sammelte ich praktische Erfahrungen mit HTML, CSS, JavaScript, React, Node.js, Express und MongoDB und arbeitete an realen Projekten, die sowohl meine technischen als auch meine kommunikativen Fähigkeiten stärkten. Im Anschluss an den Kurs absolvierte ich ein zweimonatiges Praktikum bei Drengr Tech IT Solution, wo ich mein Wissen in einem professionellen Umfeld anwenden und zur Frontend-Entwicklung von Webanwendungen beitragen konnte.',
+    it: 'Durante la mia formazione, ho acquisito esperienza pratica con HTML, CSS, JavaScript, React, Node.js, Express e MongoDB, e ho collaborato a progetti reali che hanno rafforzato sia le mie competenze tecniche sia quelle comunicative. Al termine del corso, ho svolto un tirocinio di due mesi presso Drengr Tech IT Solution, dove ho applicato le mie conoscenze in un contesto professionale e contribuito allo sviluppo frontend di applicazioni web.'
   },
+  'about.career.p3': {
+    en: 'My background in the performing arts has taught me discipline, teamwork, and an eye for detail qualities I now bring to my new path in tech. I am currently seeking my first professional opportunity as a Junior Web Developer, where I can continue to grow, learn, and contribute to innovative digital projects in a dynamic and supportive environment.',
+    de: 'Mein Hintergrund in den darstellenden Künsten hat mir Disziplin, Teamarbeit und ein Auge fürs Detail vermittelt Qualitäten, die ich nun auf meinem neuen Weg in der Tech-Welt einbringe. Derzeit suche ich meine erste berufliche Gelegenheit als Junior Web Developer, um weiter zu wachsen, zu lernen und zu innovativen digitalen Projekten in einem dynamischen und unterstützenden Umfeld beizutragen.',
+    it: 'La mia esperienza nelle arti performative mi ha insegnato disciplina, lavoro di squadra e attenzione ai dettagli qualità che ora porto con me nel mio nuovo percorso nel settore tecnologico. Attualmente sono alla ricerca della mia prima opportunità professionale come Junior Web Developer, dove possa continuare a crescere, imparare e contribuire a progetti digitali innovativi in un ambiente dinamico e stimolante.'
+    },
   'about.approach.title': {
     en: 'Professional Approach',
     de: 'Professioneller Ansatz',
@@ -148,24 +153,24 @@ const translations: Translations = {
     it: 'Ecco alcuni dei miei progetti in evidenza che mostrano le mie capacità ed esperienze.'
   },
   'projects.project1.title': {
-    en: 'First Project in Web Development Course',
-    de: 'Erstes Projekt im Webentwicklungskurs',
-    it: 'Primo Progetto nel Corso di Sviluppo Web'
+    en: 'My First Web Portfolio',
+    de: 'Mein erstes Web-Portfolio',
+    it: 'Il mio primo portfolio web'
   },
   'projects.project1.desc': {
-    en: 'I developed my first portfolio using HTML, CSS, and JavaScript. I integrated Formspree to efficiently manage contact form submissions.',
-    de: 'Ich entwickelte mein erstes Portfolio mit HTML, CSS und JavaScript. Ich integrierte Formspree, um Kontaktformulareinreichungen effizient zu verwalten.',
-    it: 'Ho sviluppato il mio primo portfolio utilizzando HTML, CSS e JavaScript. Ho integrato Formspree per gestire efficientemente le invio di moduli di contatto.'
+    en: 'A simple and functional portfolio, created to showcase my first projects as a web developer. It includes basic HTML, CSS, and JavaScript, with a focus on structure and clean code.',
+    de: 'Ein einfaches und funktionales Portfolio, das erstellt wurde, um meine ersten Projekte als Webentwickler vorzustellen. Es enthält grundlegendes HTML, CSS und JavaScript, mit Fokus auf Struktur und sauberen Code.',
+    it: 'Un portfolio semplice e funzionale, realizzato per presentare i miei primi progetti come sviluppatore web. Include HTML, CSS e JavaScript base, con attenzione alla struttura e alla pulizia del codice.'
   },
   'projects.project2.title': {
-    en: 'Design Philosophy',
-    de: 'Design-Philosophie',
-    it: 'Filosofia di Design'
+    en: 'Weather Application',
+    de: 'Wetter-App',
+    it: 'Applicazione Meteo'
   },
   'projects.project2.desc': {
-    en: 'I prefer clean and intuitive designs that implement designs that reflect my personality and showcase my skills and drive as a frontend developer.',
-    de: 'Ich bevorzuge klare und intuitive Designs, die Designs umsetzen, die meine Persönlichkeit widerspiegeln und meine Fähigkeiten und meinen Antrieb als Frontend-Entwickler zeigen.',
-    it: 'Preferisco design puliti e intuitivi che implementano design che riflettono la mia personalità e mostrano le mie capacità e la mia passione come sviluppatore frontend.'
+    en: 'A weather application that displays current conditions and forecasts using real-time data from an API. Built with HTML, CSS, and JavaScript.',
+    de: 'Eine Wetteranwendung, die aktuelle Bedingungen und Wettervorhersagen anzeigt, basierend auf Echtzeitdaten von einer API. Erstellt mit HTML, CSS und JavaScript.',
+    it: 'Un\'applicazione meteo che mostra le condizioni attuali e le previsioni del tempo, utilizzando dati in tempo reale da un\'API. Realizzata con HTML, CSS e JavaScript.'
   },
   'projects.project3.title': {
     en: 'World-Trivia Game',
@@ -173,19 +178,19 @@ const translations: Translations = {
     it: 'Gioco di Trivia Mondiale'
   },
   'projects.project3.desc': {
-    en: 'Educational Game with Unity C#: I developed a trivia game featuring questions from over 20 countries. Players can select a country, answer cultural and historical questions, and progress through multiple levels with correct and incorrect answers.',
-    de: 'Lernspiel mit Unity C#: Ich entwickelte ein Trivia-Spiel mit Fragen aus über 20 Ländern. Spieler können ein Land auswählen, kulturelle und historische Fragen beantworten und mit richtigen und falschen Antworten durch mehrere Level fortschreiten.',
-    it: 'Gioco educativo con Unity C#: Ho sviluppato un gioco di trivia con domande provenienti da oltre 20 paesi. I giocatori possono selezionare un paese, rispondere a domande culturali e storiche e progredire attraverso più livelli con risposte corrette e incorrette.'
+    en: 'A dynamic trivia game built with HTML, CSS, and JavaScript. The app presents multiple-choice questions, checks answers in real-time, and tracks the final score.',
+    de: 'Ein dynamisches Quizspiel, entwickelt mit HTML, CSS und JavaScript. Die Anwendung zeigt Multiple-Choice-Fragen, prüft die Antworten in Echtzeit und verfolgt den Endpunktestand.',
+    it: 'Un gioco a quiz dinamico sviluppato con HTML, CSS e JavaScript. L’applicazione presenta domande a scelta multipla, verifica le risposte in tempo reale e tiene traccia del punteggio finale.'
   },
   'projects.project4.title': {
-    en: 'Tech Insighter Dash',
-    de: 'Tech Insighter Dash',
-    it: 'Tech Insighter Dash'
+    en: 'Code Square Chat',
+    de: 'Code Square Chat',
+    it: 'Code Square Chat'
   },
   'projects.project4.desc': {
-    en: 'Built with React, JavaScript, and CSS, creating a dynamic and responsive web interface to elevate the gaming experience.',
-    de: 'Gebaut mit React, JavaScript und CSS, um eine dynamische und responsive Weboberfläche zu erstellen, die das Spielerlebnis verbessert.',
-    it: 'Costruito con React, JavaScript e CSS, creando un\'interfaccia web dinamica e reattiva per elevare l\'esperienza di gioco.'
+    en: 'Code Square Chat (CSC) is a real-time chat application built for seamless and secure communication. It includes user registration, public chat rooms, private messaging, and a responsive UI optimized for mobile and desktop devices. CSC is the final project of the DCI Full Stack Web Development course.',
+    de: 'Code Square Chat (CSC) ist eine Echtzeit-Chat-Anwendung, die für nahtlose und sichere Kommunikation entwickelt wurde. Sie bietet Benutzerregistrierung, öffentliche Chaträume, private Nachrichten und eine responsive Benutzeroberfläche, die für Mobilgeräte und Desktops optimiert ist. CSC ist das Abschlussprojekt des DCI Full Stack Web Development Kurses.',
+    it: 'Code Square Chat (CSC) è un\'applicazione di chat in tempo reale progettata per una comunicazione fluida e sicura. Include registrazione degli utenti, stanze pubbliche, messaggistica privata e un\'interfaccia responsive ottimizzata per dispositivi mobili e desktop. CSC è il progetto finale del corso Full Stack Web Development di DCI.'
   },
   'projects.github': {
     en: 'GitHub',

@@ -24,6 +24,9 @@ export default function About() {
             <p className="text-muted-foreground">
               {t('about.career.p2')}
             </p>
+            <p className="text-muted-foreground">
+              {t('about.career.p3')}
+            </p>
             
             <h3 className="text-2xl font-semibold text-accent mt-8">{t('about.approach.title')}</h3>
             <p className="text-muted-foreground">
@@ -39,7 +42,7 @@ export default function About() {
                   <li>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                       <h4 className="font-medium">{t('about.education.webdev')}</h4>
-                      <span className="text-xs text-muted-foreground">07/2022 - 04/2023</span>
+                      <span className="text-xs text-muted-foreground">01/2024 - 04/2025</span>
                     </div>
                     <p className="text-sm text-muted-foreground">DCI Career Institute, Berlin</p>
                     <p className="text-sm text-muted-foreground mt-1">

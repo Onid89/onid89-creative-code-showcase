@@ -11,18 +11,21 @@ const technologies = [
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", category: "frontend" },
   { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", category: "frontend" },
   { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", category: "frontend" },
-  { name: "TailwindCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", category: "frontend" },
+  { name: "TailwindCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", category: "frontend" },
   { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", category: "backend" },
   { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", category: "backend" },
+  { name: "Slack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg", category: "frontend" },
+  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg", category: "frontend" },
+  { name: "csharp", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg", category: "backend" }
 ];
 
-// Transferable skills from artistic career
+// Transferable skills from artistic careerS
 const transferableSkills = [
-  { name: 'skills.creativity', description: 'skills.creativity.desc', color: 'primary' },
-  { name: 'skills.discipline', description: 'skills.discipline.desc', color: 'accent' },
+  { name: 'skills.creativity', description: 'skills.creativity.desc', color: 'white' },
+  { name: 'skills.discipline', description: 'skills.discipline.desc', color: 'white' },
   { name: 'skills.attention', description: 'skills.attention.desc', color: 'white' },
-  { name: 'skills.teamwork', description: 'skills.teamwork.desc', color: 'primary' },
-  { name: 'skills.problem', description: 'skills.problem.desc', color: 'accent' },
+  { name: 'skills.teamwork', description: 'skills.teamwork.desc', color: 'white' },
+  { name: 'skills.problem', description: 'skills.problem.desc', color: 'white' },
   { name: 'skills.time', description: 'skills.time.desc', color: 'white' },
 ];
 
@@ -61,7 +64,7 @@ export default function Skills() {
         {/* Transferable skills from artistic career */}
         <div className="mt-12 glass border border-accent/20 rounded-lg p-6 hover:italian-border transition-all">
           <h3 className="text-xl font-semibold mb-4 text-center text-accent">{t('skills.transferable')}</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 Slg:grid-cols-3 gap-6 mt-6">
             {transferableSkills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className={`text-${skill.color} text-xl font-bold mb-2`}>{t(skill.name)}</div>
