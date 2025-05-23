@@ -175,19 +175,6 @@ export default function Contact() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Download className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
-                    <h4 className="font-medium text-sm sm:text-base">CV Download</h4>
-                    <a
-                        href="/cv/Gerardo_Michele_Mussuto_CV.pdf"
-                        download="Gerardo_Michele_Mussuto_CV.pdf"
-                        className="text-muted-foreground hover:text-accent transition-colors text-sm sm:text-base"
-                    >
-                      Download CV
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <Download className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
-                  <div className="min-w-0">
                     <h4 className="font-medium text-sm sm:text-base">Certificate and CV</h4>
                     <a
                         href="/downloads/Certificate-Cv.zip"
