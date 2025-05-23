@@ -1,10 +1,11 @@
+
 import React, { useState } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import emailjs from "@emailjs/browser";
 
@@ -169,6 +170,19 @@ export default function Contact() {
                         className="text-muted-foreground hover:text-accent transition-colors"
                     >
                       linkedin.com/in/gerardo-michele-mussuto
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Download className="h-6 w-6 text-accent mt-1" />
+                  <div>
+                    <h4 className="font-medium">CV Download</h4>
+                    <a
+                        href="/cv/Gerardo_Michele_Mussuto_CV.pdf"
+                        download="Gerardo_Michele_Mussuto_CV.pdf"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      Download my CV
                     </a>
                   </div>
                 </div>
