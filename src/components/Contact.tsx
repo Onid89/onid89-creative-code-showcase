@@ -176,13 +176,13 @@ export default function Contact() {
                 <div className="flex items-start space-x-4">
                   <Download className="h-6 w-6 text-accent mt-1" />
                   <div>
-                    <h4 className="font-medium">CV Download</h4>
+                    <h4 className="font-medium">Certificate and CV</h4>
                     <a
-                        href="/cv/Gerardo_Michele_Mussuto_CV.pdf"
-                        download="Gerardo_Michele_Mussuto_CV.pdf"
+                        href="/public/downloads/Certificate-Cv.zip"
+                        download="Certificate and CV"
                         className="text-muted-foreground hover:text-accent transition-colors"
                     >
-                      Download my CV
+                      Download
                     </a>
                   </div>
                 </div>

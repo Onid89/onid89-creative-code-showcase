@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <a href="#home" className="text-xl font-bold text-accent">
-              Gerardo Mussuto | WebDev Portfolio
+              Gerardo Mussuto Portfolio| Dino Webservices
             </a>
           </div>
           
