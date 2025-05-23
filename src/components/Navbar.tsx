@@ -36,16 +36,16 @@ export default function Navbar() {
         scrolled ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-xl font-bold text-accent">
+            <a href="#home" className="text-sm sm:text-lg lg:text-xl font-bold text-accent truncate">
               Gerardo Mussuto Portfolio| Dino Webservices
             </a>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-4">
+          <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <div className="flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <a
@@ -65,16 +65,16 @@ export default function Navbar() {
           </div>
           
           {/* Mobile Navigation Button */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="lg:hidden flex items-center space-x-1">
             <ThemeToggle />
             <LanguageSwitcher />
             <Button
               variant="ghost"
-              size="icon"
+              size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground ml-2"
+              className="text-foreground ml-1 p-2"
             >
-              {isMenuOpen ? <X /> : <Menu />}
+              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </Button>
           </div>
         </div>
@@ -82,8 +82,8 @@ export default function Navbar() {
       
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden glass">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="lg:hidden glass">
+          <div className="px-3 pt-2 pb-3 space-y-1 sm:px-4">
             {navItems.map((item) => (
               <a
                 key={item.label}
