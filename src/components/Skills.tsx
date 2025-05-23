@@ -43,12 +43,12 @@ export default function Skills() {
           </p>
         </div>
         
-        {/* Technologies grid - similar to the reference image */}
+        {/* Technologies grid - with responsive background colors */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
           {technologies.map((tech, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center p-4 rounded-lg bg-black text-white hover:scale-105 transition-transform"
+              className="flex flex-col items-center p-4 rounded-lg bg-gray-200 dark:bg-black text-black dark:text-white hover:scale-105 transition-transform"
             >
               <img 
                 src={tech.icon} 
