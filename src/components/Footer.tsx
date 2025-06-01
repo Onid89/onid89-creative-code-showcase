@@ -53,6 +53,22 @@ export default function Footer() {
             <p className="text-xs text-muted-foreground mt-2">
               {t('footer.description')}
             </p>
+            <div className="mt-4 flex gap-4 justify-center text-xs sm:text-sm">
+              <a
+                  href="/impressum.html"
+                  className="text-muted-foreground hover:underline"
+              >
+                Impressum
+              </a>
+              <span>|</span>
+              <a
+                  href="/datenschutz.html"
+
+                  className="text-muted-foreground hover:underline"
+              >
+                Datenschutzerklärung
+              </a>
+            </div>
           </div>
         </div>
       </div>
