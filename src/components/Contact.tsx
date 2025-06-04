@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
@@ -29,6 +28,22 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Check if any field is empty
+    if (
+        !formData.from_name.trim() ||
+        !formData.from_email.trim() ||
+        !formData.message.trim()
+    ) {
+      toast({
+        variant: "destructive",
+        title: t("contact.form.errorTitle") || "Please fill in all fields",
+        description:
+            t("contact.form.errorDesc") || "All fields are required before submitting.",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -50,7 +65,8 @@ export default function Contact() {
       toast({
         variant: "destructive",
         title: "Submission failed",
-        description: "There was an error sending your message. Please try again.",
+        description:
+            "There was an error sending your message. Please try again.",
       });
     } finally {
       setIsSubmitting(false);
@@ -58,7 +74,10 @@ export default function Contact() {
   };
 
   return (
-      <section id="contact" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <section
+          id="contact"
+          className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+      >
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col items-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gradient text-center">
@@ -78,7 +97,10 @@ export default function Contact() {
 
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
-                  <label htmlFor="from_name" className="block text-sm font-medium mb-2">
+                  <label
+                      htmlFor="from_name"
+                      className="block text-sm font-medium mb-2"
+                  >
                     {t("contact.form.name")}
                   </label>
                   <Input
@@ -91,7 +113,10 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="from_email" className="block text-sm font-medium mb-2">
+                  <label
+                      htmlFor="from_email"
+                      className="block text-sm font-medium mb-2"
+                  >
                     {t("contact.form.email")}
                   </label>
                   <Input
@@ -105,7 +130,10 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label
+                      htmlFor="message"
+                      className="block text-sm font-medium mb-2"
+                  >
                     {t("contact.form.message")}
                   </label>
                   <Textarea
@@ -122,7 +150,9 @@ export default function Contact() {
                     className="w-full bg-accent hover:bg-accent/80 text-white"
                     disabled={isSubmitting}
                 >
-                  {isSubmitting ? t("contact.form.sending") : t("contact.form.send")}
+                  {isSubmitting
+                      ? t("contact.form.sending")
+                      : t("contact.form.send")}
                 </Button>
               </form>
             </div>
@@ -135,7 +165,9 @@ export default function Contact() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
-                    <h4 className="font-medium text-sm sm:text-base">{t("contact.info.email")}</h4>
+                    <h4 className="font-medium text-sm sm:text-base">
+                      {t("contact.info.email")}
+                    </h4>
                     <a
                         href="mailto:dinomussuto89@gmail.com"
                         className="text-muted-foreground hover:text-accent transition-colors text-sm sm:text-base break-words"
@@ -147,7 +179,9 @@ export default function Contact() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Github className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
-                    <h4 className="font-medium text-sm sm:text-base">{t("contact.info.github")}</h4>
+                    <h4 className="font-medium text-sm sm:text-base">
+                      {t("contact.info.github")}
+                    </h4>
                     <a
                         href="https://github.com/Onid89"
                         target="_blank"
@@ -161,7 +195,9 @@ export default function Contact() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
-                    <h4 className="font-medium text-sm sm:text-base">{t("contact.info.linkedin")}</h4>
+                    <h4 className="font-medium text-sm sm:text-base">
+                      {t("contact.info.linkedin")}
+                    </h4>
                     <a
                         href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313/"
                         target="_blank"
@@ -175,7 +211,9 @@ export default function Contact() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Download className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
-                    <h4 className="font-medium text-sm sm:text-base">Certificate and CV</h4>
+                    <h4 className="font-medium text-sm sm:text-base">
+                      Certificate and CV
+                    </h4>
                     <a
                         href="/downloads/Certificate-Cv.zip"
                         download="Certificate and CV"
