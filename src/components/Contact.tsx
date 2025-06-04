@@ -212,11 +212,11 @@ export default function Contact() {
                   <Download className="h-5 w-5 sm:h-6 sm:w-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
                     <h4 className="font-medium text-sm sm:text-base">
-                      Certificate and CV
+                      Gerardo CV
                     </h4>
                     <a
-                        href="/downloads/Certificate-Cv.zip"
-                        download="Certificate and CV"
+                        href="/downloads/Gerardo M. Mussuto CV.pdf.zip"
+                        download="Gerardo CV"
                         className="text-muted-foreground hover:text-accent transition-colors text-sm sm:text-base"
                     >
                       Download
