@@ -23,7 +23,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a 
-              href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313/"
+              href="https://www.linkedin.com/in/gerardo-michele-mussuto"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-white transition-colors"
