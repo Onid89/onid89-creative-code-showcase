@@ -5,18 +5,18 @@ import { useLanguage } from "@/context/LanguageContext";
 
 // Tech stack icons and logos
 const technologies = [
-  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", category: "frontend" },
-  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", category: "frontend" },
-  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", category: "frontend" },
-  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", category: "frontend" },
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", category: "frontend" },
-  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", category: "frontend" },
-  { name: "TailwindCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", category: "frontend" },
-  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", category: "backend" },
-  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", category: "backend" },
-  { name: "Slack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg", category: "frontend" },
-  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg", category: "frontend" },
-  { name: "csharp", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg", category: "backend" }
+  { name: "HTML5", icon: "public/icons/technologies/html5-original.svg", category: "frontend" },
+  { name: "CSS3", icon: "public/icons/technologies/css3-original.svg", category: "frontend" },
+  { name: "JavaScript", icon: "public/icons/technologies/javascript-original.svg", category: "frontend" },
+  { name: "TypeScript", icon: "public/icons/technologies/typescript-original.svg", category: "frontend" },
+  { name: "React", icon: "public/icons/technologies/react-original.svg", category: "frontend" },
+  { name: "Next.js", icon: "public/icons/technologies/nextjs-original.svg", category: "frontend" },
+  { name: "TailwindCSS", icon: "public/icons/technologies/tailwindcss-original.svg", category: "frontend" },
+  { name: "Node.js", icon: "public/icons/technologies/nodejs-original.svg", category: "backend" },
+  { name: "MongoDB", icon: "public/icons/technologies/mongodb-original.svg", category: "backend" },
+  { name: "Slack", icon: "public/icons/technologies/slack-original.svg", category: "frontend" },
+  { name: "Bootstrap", icon: "public/icons/technologies/bootstrap-original.svg", category: "frontend" },
+  { name: "csharp", icon: "public/icons/technologies/csharp-original.svg", category: "backend" }
 ];
 
 // Transferable skills from artistic careerS
