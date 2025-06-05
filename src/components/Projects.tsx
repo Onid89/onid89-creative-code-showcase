@@ -12,7 +12,7 @@ const projects = [
   {
     titleKey: "projects.project1.title",
     descriptionKey: "projects.project1.desc",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3",
+    image: "/images/firstportfolio.webp",
     tags: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/Onid89/Web-Dev-Portfolio",
     demo: "https://onid89.github.io/Web-Dev-Portfolio/"
