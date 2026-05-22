@@ -40,7 +40,17 @@ const projects = [
     tags: ["React", "TypeScript", "SCSS", "Vite", "Node.js", "Express.js", "WebSocket", "MongoDB"],
     github: "https://github.com/Onid89/realtime-chat",
     demo: "https://csc-frontend-2gdx.onrender.com/"
-  }
+  },
+   {
+    titleKey: "projects.project5.title",
+    descriptionKey: "projects.project5.desc",
+    image: "images/website-transformation-studio-card-1200x675.webp",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "AI-assisted", "Vibe Coding", "Responsive Design", "Multilingual UI"],
+    github: "https://github.com/Onid89/website-transformation-studio",
+    demo: "https://website-transformation-studio.vercel.app/"
+  },
+
+
 ];
 
 export default function Projects() {

@@ -192,6 +192,16 @@ const translations: Translations = {
     de: 'Code Square Chat (CSC) ist eine Echtzeit-Chat-Anwendung, die für nahtlose und sichere Kommunikation entwickelt wurde. Sie bietet Benutzerregistrierung, öffentliche Chaträume, private Nachrichten und eine responsive Benutzeroberfläche, die für Mobilgeräte und Desktops optimiert ist. CSC ist das Abschlussprojekt des DCI Full Stack Web Development Kurses.',
     it: 'Code Square Chat (CSC) è un\'applicazione di chat in tempo reale progettata per una comunicazione fluida e sicura. Include registrazione degli utenti, stanze pubbliche, messaggistica privata e un\'interfaccia responsive ottimizzata per dispositivi mobili e desktop. CSC è il progetto finale del corso Full Stack Web Development di DCI.'
   },
+  'projects.project5.title': {
+    en: 'Website Transformation Studio',
+    de: 'Website Transformation Studio',
+    it: 'Website Transformation Studio'
+  },
+  'projects.project5.desc': {
+    en: 'A multilingual AI-assisted redesign prototype that transforms existing homepage content into a modern before-and-after website concept. Built with React, TypeScript, Tailwind CSS and a vibe coding workflow."',
+    de: 'Ein mehrsprachiger KI-gestützter Redesign-Prototyp, der bestehende Homepage-Inhalte in ein modernes Vorher-Nachher-Website-Konzept verwandelt. Entwickelt mit React, TypeScript, Tailwind CSS und einem Vibe-Coding-Workflow."',
+    it: 'Un prototipo di ridisegno assistito da IA multilingue che trasforma i contenuti esistenti della homepage in un concetto moderno di sito web prima e dopo. Costruito con React, TypeScript, Tailwind CSS e un workflow di coding Vibe."'
+  },
   'projects.github': {
     en: 'GitHub',
     de: 'GitHub',
