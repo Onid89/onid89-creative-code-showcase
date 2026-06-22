@@ -16,7 +16,8 @@ const technologies = [
   { name: "MongoDB", icon: "/icons/technologies/mongodb-original.svg", category: "backend" },
   { name: "Slack", icon: "/icons/technologies/slack-original.svg", category: "frontend" },
   { name: "Bootstrap", icon: "/icons/technologies/bootstrap-original.svg", category: "frontend" },
-  { name: "csharp", icon: "/icons/technologies/csharp-original.svg", category: "backend" }
+  { name: "csharp", icon: "/icons/technologies/csharp-original.svg", category: "backend" },
+  { name: "n8n", icon: "/icons/technologies/n8n_pink+white_logo.svg", category: "automation" },
 ];
 
 // Transferable skills from artistic careerS
