@@ -52,7 +52,7 @@ const projects = [
   {
   titleKey: "projects.project6.title",
   descriptionKey: "projects.project6.desc",
-  image: "dist/images/workflow-overview.png",
+  image: "/images/workflow-overview.png",
   tags: [
   "n8n",
     "Automation",
