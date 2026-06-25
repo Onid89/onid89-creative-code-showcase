@@ -49,6 +49,24 @@ const projects = [
     github: "https://github.com/Onid89/website-transformation-studio",
     demo: "https://website-transformation-studio.vercel.app/"
   },
+  {
+  titleKey: "projects.project6.title",
+  descriptionKey: "projects.project6.desc",
+  image: "dist/images/workflow-overview.png",
+  tags: [
+  "n8n",
+    "Automation",
+    "No-Code / Low-Code",
+    "Google Sheets",
+    "Gmail",
+    "Form Trigger",
+    "Wait Node",
+    "Data Mapping",
+    "Workflow Automation"
+  ],
+  github: "https://github.com/Onid89/n8n-job-application-tracker",
+ 
+},
 
 
 ];

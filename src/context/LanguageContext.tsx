@@ -202,6 +202,16 @@ const translations: Translations = {
     de: 'Ein mehrsprachiger KI-gestützter Redesign-Prototyp, der bestehende Homepage-Inhalte in ein modernes Vorher-Nachher-Website-Konzept verwandelt. Entwickelt mit React, TypeScript, Tailwind CSS und einem Vibe-Coding-Workflow."',
     it: 'Un prototipo di ridisegno assistito da IA multilingue che trasforma i contenuti esistenti della homepage in un concetto moderno di sito web prima e dopo. Costruito con React, TypeScript, Tailwind CSS e un workflow di coding Vibe."'
   },
+  'projects.project6.title': {
+  en: 'Job Application Tracker Automation (n8n)',
+  de: 'Automatisierter Bewerbungs-Tracker (n8n)',
+  it: 'Automazione per Tracciare le Candidature (n8n)'
+},
+'projects.project6.desc': {
+  en: 'A no-code/low-code automation workflow built with n8n to manage job applications more efficiently. It collects application data through a form, saves it in Google Sheets, sends a confirmation email and schedules an automatic follow-up reminder.',
+  de: 'Ein No-Code/Low-Code-Automatisierungsworkflow mit n8n, um Bewerbungen effizienter zu verwalten. Er sammelt Bewerbungsdaten über ein Formular, speichert sie in Google Sheets, sendet eine Bestätigungs-E-Mail und plant eine automatische Follow-up-Erinnerung.',
+  it: 'Un workflow di automazione no-code/low-code creato con n8n per gestire le candidature in modo più efficiente. Raccoglie i dati tramite un form, li salva in Google Sheets, invia un’e-mail di conferma e programma un promemoria automatico di follow-up.'
+},
   'projects.github': {
     en: 'GitHub',
     de: 'GitHub',
