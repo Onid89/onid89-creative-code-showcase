@@ -20,7 +20,7 @@ const projects = [
   {
     titleKey: "projects.project2.title",
     descriptionKey: "projects.project2.desc",
-    image: "/images/Weather-App.webp",
+    image: "/images/Weather-App.png",
     tags: ["HTML5", "CSS3", "JavaScript","API"],
     github: "https://github.com/Onid89/Weather-App",
     demo: "https://onid89.github.io/Weather-App/"
