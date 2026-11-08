@@ -12,7 +12,7 @@ const projects = [
   {
     titleKey: "projects.dino.title",
     descriptionKey: "projects.dino.desc",
-    image: "https://dino-job-assistant-demo.vercel.app/dino-job-assistant.png",
+    image: "/images/dino-job-assistant.png",
     featured: true,
     tags: ["React", "TypeScript", "Vite", "i18next", "AI-assisted workflows", "Interactive Demo"],
     demo: "https://dino-job-assistant-demo.vercel.app/"
