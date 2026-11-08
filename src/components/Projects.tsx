@@ -10,6 +10,14 @@ import { useLanguage } from "@/context/LanguageContext";
 // Project data with translation keys
 const projects = [
   {
+    titleKey: "projects.dino.title",
+    descriptionKey: "projects.dino.desc",
+    image: "https://dino-job-assistant-demo.vercel.app/dino-job-assistant.png",
+    featured: true,
+    tags: ["React", "TypeScript", "Vite", "i18next", "AI-assisted workflows", "Interactive Demo"],
+    demo: "https://dino-job-assistant-demo.vercel.app/"
+  },
+  {
     titleKey: "projects.project1.title",
     descriptionKey: "projects.project1.desc",
     image: "/images/firstportfolio.webp",
@@ -93,13 +101,34 @@ export default function Projects() {
               key={index} 
               className="glass overflow-hidden border-accent/20 hover:italian-border transition-all group"
             >
-              <div className="h-40 sm:h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={t(project.titleKey)}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+              {"featured" in project && project.featured ? (
+                <div className="relative flex h-40 sm:h-48 items-center gap-5 overflow-hidden bg-[#101c38] px-6 sm:px-8">
+                  <div className="absolute -right-12 -top-16 h-52 w-52 rounded-full border border-[#2859ed]/25" aria-hidden="true" />
+                  <div className="absolute -right-4 -bottom-24 h-52 w-52 rounded-full border border-[#2859ed]/25" aria-hidden="true" />
+                  <img
+                    src={project.image}
+                    alt="Dino Job Assistant"
+                    className="relative z-10 h-20 w-20 shrink-0 rounded-2xl object-contain shadow-lg sm:h-24 sm:w-24"
+                    loading="lazy"
+                  />
+                  <div className="relative z-10 min-w-0 text-white">
+                    <span className="mb-2 inline-block rounded-full border border-white/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-blue-200">
+                      Interactive Demo
+                    </span>
+                    <div className="text-xl font-bold leading-tight sm:text-2xl">Dino Job Assistant</div>
+                    <p className="mt-1 text-xs text-blue-100/80 sm:text-sm">Job search · Applications · Follow-ups</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={t(project.titleKey)}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+              )}
               <CardHeader className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-accent">{t(project.titleKey)}</h3>
               </CardHeader>
@@ -114,12 +143,14 @@ export default function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="flex flex-col xs:flex-row gap-3 xs:gap-4 p-4 sm:p-6">
-                <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10 w-full xs:w-auto">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                    <Github className="mr-2 h-4 w-4" />
-                    {t('projects.github')}
-                  </a>
-                </Button>
+                {"github" in project && project.github && (
+                  <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10 w-full xs:w-auto">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <Github className="mr-2 h-4 w-4" />
+                      {t('projects.github')}
+                    </a>
+                  </Button>
+                )}
                 {project.demo && (
                   <Button asChild size="sm" className="bg-accent hover:bg-accent/80 text-white w-full xs:w-auto">
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
