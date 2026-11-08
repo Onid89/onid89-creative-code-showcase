@@ -141,6 +141,17 @@ const translations: Translations = {
     de: 'Deutsch',
     it: 'Tedesco'
   },
+  // Dino Job Assistant public demo
+  'projects.dino.title': {
+    en: 'Dino Job Assistant — Interactive Demo',
+    de: 'Dino Job Assistant — Interaktive Demo',
+    it: 'Dino Job Assistant — Demo interattiva'
+  },
+  'projects.dino.desc': {
+    en: 'An interactive job-search management demo showcasing opportunity discovery, application tracking and follow-up planning. Built with React and TypeScript; uses fictional data and simulated AI workflows, with no access to private accounts or records.',
+    de: 'Eine interaktive Demo zur Organisation der Jobsuche: Stellenangebote entdecken, Bewerbungen verfolgen und Follow-ups planen. Entwickelt mit React und TypeScript, mit fiktiven Daten und simulierten KI-Workflows – ohne Zugriff auf private Konten oder Unterlagen.',
+    it: 'Una demo interattiva per organizzare la ricerca di lavoro: scoperta delle offerte, monitoraggio delle candidature e gestione dei follow-up. Sviluppata con React e TypeScript, utilizza dati fittizi e flussi AI simulati, senza accesso ad account o documenti privati.'
+  },
   // Projects section
   'projects.title': {
     en: 'My Projects',
