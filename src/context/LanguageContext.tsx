@@ -152,6 +152,21 @@ const translations: Translations = {
     de: 'Eine interaktive Demo zur Organisation der Jobsuche: Stellenangebote entdecken, Bewerbungen verfolgen und Follow-ups planen. Entwickelt mit React und TypeScript, mit fiktiven Daten und simulierten KI-Workflows – ohne Zugriff auf private Konten oder Unterlagen.',
     it: 'Una demo interattiva per organizzare la ricerca di lavoro: scoperta delle offerte, monitoraggio delle candidature e gestione dei follow-up. Sviluppata con React e TypeScript, utilizza dati fittizi e flussi AI simulati, senza accesso ad account o documenti privati.'
   },
+  'projects.supportDesk.title': {
+    en: 'Dino IT Support Desk',
+    de: 'Dino IT Support Desk',
+    it: 'Dino IT Support Desk'
+  },
+  'projects.supportDesk.desc': {
+    en: 'A premium interactive IT support demo built with React and TypeScript. It showcases ticket intake, triage, queue management, a guided Resolution Journey, simulated support copilot features, reports, multilingual UI and light/dark themes — designed to demonstrate how a modern support desk can work in practice.',
+    de: 'Eine hochwertige interaktive IT-Support-Demo, entwickelt mit React und TypeScript. Sie zeigt Ticket-Erfassung, Triage, Queue-Management, eine geführte Resolution Journey, simulierte Support-Copilot-Funktionen, Berichte, eine mehrsprachige Oberfläche sowie Light-/Dark-Mode — als praxisnahe Demonstration eines modernen Support Desks.',
+    it: 'Una demo interattiva premium di supporto IT sviluppata con React e TypeScript. Mostra apertura ticket, triage, gestione della coda, una Resolution Journey guidata, funzionalità simulate di support copilot, report, interfaccia multilingua e modalità chiara/scura — pensata per dimostrare in pratica il funzionamento di un moderno support desk.'
+  },
+  'projects.supportDesk.features': {
+    en: 'Use the built-in Quick Tour to explore the operations dashboard, employee portal, knowledge base, asset inventory and simulated automations. Available in English, German and Italian.',
+    de: 'Die integrierte Kurzeinführung zeigt das operative Dashboard, das Mitarbeiterportal, die Wissensdatenbank, das Inventar und simulierte Automatisierungen. Verfügbar auf Englisch, Deutsch und Italienisch.',
+    it: 'Il tour introduttivo integrato presenta la dashboard operativa, il portale dipendenti, la base di conoscenza, l’inventario e le automazioni simulate. Disponibile in inglese, tedesco e italiano.'
+  },
   // Projects section
   'projects.title': {
     en: 'My Projects',
