@@ -18,6 +18,14 @@ const projects = [
     demo: "https://dino-job-assistant-demo.vercel.app/"
   },
   {
+    titleKey: "projects.supportDesk.title",
+    descriptionKey: "projects.supportDesk.desc",
+    featuresKey: "projects.supportDesk.features",
+    image: "/images/dino-it-support-desk-preview.webp",
+    tags: ["React", "TypeScript", "Vite", "i18n", "IT Support", "Ticketing", "Interactive Demo", "Light / Dark Mode"],
+    demo: "https://dino-it-support-desk.vercel.app/"
+  },
+  {
     titleKey: "projects.project1.title",
     descriptionKey: "projects.project1.desc",
     image: "/images/firstportfolio.webp",
@@ -134,6 +142,9 @@ export default function Projects() {
               </CardHeader>
               <CardContent className="p-4 sm:p-6 pt-0">
                 <p className="text-muted-foreground mb-4 text-sm sm:text-base">{t(project.descriptionKey)}</p>
+                {project.featuresKey && (
+                  <p className="text-muted-foreground mb-4 text-sm sm:text-base">{t(project.featuresKey)}</p>
+                )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tags.map((tag, i) => (
                     <Badge key={i} variant="outline" className="border-accent/30 text-accent text-xs">
